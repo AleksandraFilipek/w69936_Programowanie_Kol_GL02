@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="zad3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <div>
+            <label for="mail">mail:</label>
+            <input type="text" id="mail" required>
+            <div id="mailError" class="error-message"></div>
+        </div>
+        <div>
+            <label for="haslo">haslo:</label>
+            <input type="password" id="haslo" minlength="8" required>
+            <div id="hasloError" class="error-message"></div>
+        </div>
+        <div>
+            <label for="telefon">telefon:</label>
+            <input type="text" id="telefon" pattern="[0-9]{9}" required>
+            <div id="telefonError" class="error-message"></div>
+        </div>
+        <div>
+            <label for="data">Data urodzenia:</label>
+            <input type="date" id="data" required>
+            <div id="dataError" class="error-message"></div>
+        </div>
+        <div>
+            <label for="kraj">Kraj:</label>
+        <select id="kraj" name="kraj" required>
+            <option value="1">Polska</option>
+            <option value="2">Ukraina</option>
+            <option value="3">Włochy</option>
+            <option value="4">Hiszpania</option>
+        </select>
+            <div id="krajError" class="error-message"></div>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
